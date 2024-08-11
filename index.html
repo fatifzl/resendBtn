@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Resend Btn</title>
+</head>
+<body>
+       <div id="container">
+        <header id="header">
+            <div>
+                <h1>Sign in to your account</h1>
+                <button class="close-btn" type="button">X</button>
+            </div>
+        </header>
+        <div id="main-div">
+            <p class="p1">Enter verification code</p>
+            <p class="p2">Enter the code sent to +989355399410 :</p>
+            <div>
+                <input onclick="createResendBtn()"" class="verification-input" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit verification code"/>
+            </div>
+            <button class="change-phone" type="button">Change phone number</button>
+        </div>
+        <footer id="footer">
+            <!-- <button id="resend-btn" class="resend resend-change" type="button" onclick="resendCode()">
+                <span>Resend code</span>
+            </button> -->
+            <button class="confirm-btn">Confirm</button>
+        </footer>
+       </div>
+    <script src="./app.js"></script>
+</body>
+</html>
