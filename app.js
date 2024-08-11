@@ -1,21 +1,16 @@
-function createResendBtn(){
-    let resendBtn = document.createElement('button');
-    document.getElementById("footer").appendChild(resendBtn);
-    resendBtn.setAttribute("id","resend-btn");
-    resendBtn.setAttribute("class","resend");
-    resendBtn.setAttribute("type","button");
-    resendBtn.setAttribute("onclick","resendCode()");
-    resendBtn.textContent = "Resend Code";
-}
-function createTag(tagName){
-
-}
-const resendCode=()=>{
+function resendCode(){
     let number=30;
+    const resendBtn=document.getElementById("resend-btn");
+    resendBtn.disabled=true;
     setInterval(() => {
-        document.get
-        if(number>0){
-            resendBtn.setAttribute("disabled");
+        const resendText=document.getElementById("span");
+        resendText.textContent=`Resend code in ${number} seconds`;
+        number-=1;
+        if(number<=0){
+           resendBtn.disabled=false;
+           resendBtn.classList.remove("resend");
+           resendBtn.classList.add("resend-change");
+           resendText.textContent="Resend code";
         }
     },1000);
 }

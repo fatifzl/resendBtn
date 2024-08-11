@@ -18,14 +18,14 @@
             <p class="p1">Enter verification code</p>
             <p class="p2">Enter the code sent to +989355399410 :</p>
             <div>
-                <input onclick="createResendBtn()"" class="verification-input" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit verification code"/>
+                <input class="verification-input" type="text" inputmode="numeric" maxlength="6" placeholder="6-digit verification code"/>
             </div>
             <button class="change-phone" type="button">Change phone number</button>
         </div>
         <footer id="footer">
-            <!-- <button id="resend-btn" class="resend resend-change" type="button" onclick="resendCode()">
-                <span>Resend code</span>
-            </button> -->
+            <button id="resend-btn" onclick="resendCode()" class="resend resend-change" type="button">
+                <span id="span"></span>
+            </button>
             <button class="confirm-btn">Confirm</button>
         </footer>
        </div>
